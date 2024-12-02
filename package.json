@@ -19,7 +19,8 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && npm run tailwind",
+    "tailwind": "npx tailwindcss -o ./dist/index.css --minify",
     "build-watch": "rm -rf ./dist && tsc && vite build --watch",
     "lint": "eslint --fix './lib/**/*.{ts,tsx,js,jsx}' && prettier . --write './lib/**/*.{ts,tsx,js,jsx,css}'",
     "preview": "vite preview"

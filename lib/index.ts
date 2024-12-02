@@ -1,4 +1,4 @@
-import "./index.module.css"
+import "./index.css"
 
 export * from "./components";
 export * from "./models";
